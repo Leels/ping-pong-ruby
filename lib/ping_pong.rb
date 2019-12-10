@@ -3,6 +3,8 @@ def ping_pong(num)
   (1..num).each do |i|
     if i.%(3).eql?(0)
       output.push("Ping")
+    elsif i.%(5).eql?(0)
+      output.push("Pong")
     else
     output.push(i)
   end
@@ -18,12 +20,12 @@ end
 #     if (x % 3 == 0)
 #       x += 1
 #       output.push("Ping")
-#     # elsif x % 5 == 0
-#     #   x += 1
-#     #   p "Pong"
+#     elsif x % 5 == 0
+#       x += 1
+#     output.push("Pong")
 #     else
 #       x += 1
-#        output.push(x)
+#       output.push(x)
 #     end
 #   end
 #   output
