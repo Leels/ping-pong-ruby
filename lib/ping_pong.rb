@@ -1,7 +1,9 @@
 def ping_pong(num)
   output = []
   (1..num).each do |i|
-    if i.%(3).eql?(0)
+  if i.%(15).eql?(0)
+    output.push("Ping-Pong")
+  elsif i.%(3).eql?(0)
       output.push("Ping")
     elsif i.%(5).eql?(0)
       output.push("Pong")
