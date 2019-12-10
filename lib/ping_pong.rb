@@ -14,12 +14,12 @@ end
 output
 end
 
-
+# while loop not working
 # def ping_pong(num)
 #   x = 0
 #   output = []
-#   while (x < num)
-#     if (x % 3 == 0)
+#   while (x <= num)
+#     if x % 3 == 0
 #       x += 1
 #       output.push("Ping")
 #     elsif x % 5 == 0
