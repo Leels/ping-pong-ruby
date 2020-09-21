@@ -1,3 +1,4 @@
+# each loop
 def ping_pong(num)
   output = []
   (1..num).each do |i|
@@ -14,19 +15,19 @@ end
 output
 end
 
-# while loop not working
+# while loop 
 # def ping_pong(num)
 #   x = 0
 #   output = []
-#   while (x <= num)
-#     if x % 3 == 0
-#       x += 1
+#   while (x < num)
+#     x = x + 1
+#     if x % 15 == 0
+#       output.push("Ping-Pong")
+#     elsif x % 3 == 0
 #       output.push("Ping")
 #     elsif x % 5 == 0
-#       x += 1
 #     output.push("Pong")
 #     else
-#       x += 1
 #       output.push(x)
 #     end
 #   end
